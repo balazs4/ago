@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js"
+    "test": "node index.test.js",
+    "lint": "npx prettier --check *.js"
   },
   "author": "balazs4",
   "devDependencies": {
     "baretest": "2.0.0"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
