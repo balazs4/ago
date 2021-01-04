@@ -1,0 +1,12 @@
+{
+  "name": "ago",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "author": "balazs4",
+  "devDependencies": {
+    "baretest": "2.0.0"
+  }
+}
