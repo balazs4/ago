@@ -1,5 +1,4 @@
 const ago = require('./');
-const test = require('baretest')('ago');
 const assert = require('assert');
 
 [
@@ -13,4 +12,3 @@ const assert = require('assert');
     assert.strictEqual(ago(date, now), expected));
 });
 
-test.run().then((allpassed) => process.exit(allpassed === true ? 0 : 1));

@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js",
+    "test": "bft index.test.js",
     "lint": "npx prettier --check *.js"
   },
   "author": "balazs4",
   "devDependencies": {
-    "baretest": "2.0.0"
+    "bft": "^1.2.1"
   },
   "prettier": {
     "singleQuote": true
