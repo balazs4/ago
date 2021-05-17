@@ -2,6 +2,9 @@
   "name": "ago",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "ago": "./ago.js"
+  },
   "scripts": {
     "test": "bft index.test.js",
     "lint": "npx prettier --check *.js"
