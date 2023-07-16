@@ -1,5 +1,6 @@
 const ago = require('./');
-const assert = require('assert');
+const assert = require('node:assert');
+const test = require('node:test');
 
 [
   ['2021-01-03T15:00:00Z', '2021-01-03T15:00:42Z', '42 seconds ago'],
@@ -8,7 +9,6 @@ const assert = require('assert');
   ['2020-01-03T15:00:00Z', '2021-01-03T15:00:42Z', '1 year ago'],
 ].forEach((testcase) => {
   const [date, now, expected] = testcase;
-  test(`[now: ${now}] '${date}' was '${expected}'`, () =>
+  test(`[Date.now(): ${now}] '${date}' was '${expected}'`, () =>
     assert.strictEqual(ago(date, now), expected));
 });
-

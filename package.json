@@ -6,14 +6,8 @@
     "ago": "./ago.js"
   },
   "scripts": {
-    "test": "bft index.test.js",
-    "lint": "npx prettier --check *.js"
+    "test": "node --test index.test.js",
+    "fmt": "npx prettier --single-quote --write *.js"
   },
-  "author": "balazs4",
-  "devDependencies": {
-    "bft": "^1.2.1"
-  },
-  "prettier": {
-    "singleQuote": true
-  }
+  "author": "balazs4"
 }
